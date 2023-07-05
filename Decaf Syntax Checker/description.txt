@@ -1,0 +1,10 @@
+Files in this assignment:
+1.  Lexer:  decaf_lexer.py – PLY/lex scanner specification file
+            contains reserved words and tokens as well as expression rules
+2.  Parser: decaf_parser.py – PLY/yacc parser specification file
+            parses through the decaf and makes sure all rules are satisified,
+            if not, errors will be printed
+3.  Main: decaf_checker.py – contains the main python function to put together
+    the lexer and parser, take the input from the Decaf program file, etc., and perform syntax checking
+    Outputs "Yes" if the decaf file is syntactically correct. If not,
+    the error will be printed.
