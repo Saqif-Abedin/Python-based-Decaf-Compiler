@@ -1,0 +1,29 @@
+Input:
+
+class test001
+{
+    public static void main()
+    {   
+        boolean a, b;
+        a = true;
+        b = !a;
+    }
+}
+
+Output:
+
+CLASS NAME : test001
+SUPER-CLASS NAME :
+FIELDS:
+CONSTRUCTORS:
+METHODS:
+METHOD: 1, main, test001, private, instance, VOID
+Method parameters:
+Variable Table:
+VARIABLE: 3, a, local, BOOLEAN
+VARIABLE: 4, b, local, BOOLEAN
+Method Body:
+Block([
+Expr( Assign(Variable(3), ConstantTrue( True )) )
+, Expr( Assign(Variable(4), UnaryExpression(!, Variable(3))) )
+])
