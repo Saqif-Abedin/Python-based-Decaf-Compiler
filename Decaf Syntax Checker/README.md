@@ -1,7 +1,0 @@
-**Input File**
-class a {\
-	int x() {\
-		a y;\
-		y= null;\
-	}\
-}

@@ -1,0 +1,21 @@
+Input:
+
+class a {
+	int x() {
+		a y;
+		y= null;
+	}
+}
+
+Ouput: Yes
+
+Input:
+
+class a {
+	int a(a) {}
+}
+
+Output:
+
+Syntax error ')' on line 2
+LexToken(),')',2,18)
