@@ -1,0 +1,17 @@
+1. decaf_lexer.py:  PLY/lex specification of Decaf tokens.
+		            Defines "errorflag" used to signal error during scanning/parsing.
+2. decaf_parser.py: PLY/yacc specification of Decaf grammar.
+		            Parses through the decaf and makes sure all rules are satisified,
+                    if not, errors will be printed.
+		            Defines "from_file" function that takes a file name and parses that file's contents.
+		            "from_file" returns True if no error, and False if error.
+3. decaf_compiler.py:   Processes arguments and gets file name to pass to decafparser.from_file
+		                Decaf programs are assumed to be in files with ".decaf" suffix.
+                        containing the main python function that ties the modules together,
+                        takes the command-line argument of the input file name, and processes the Decaf program in that file.
+                        The translated machine instructions will be written to a file with the same base name as the input file,
+                        but with a ".ami" extension.
+4. decaf_ast.py:    Defines table and class definitions for Decaf's AST.
+                    folded in: decaf_typecheck.py: definitions for evaluating the type constraints and for name resolution.
+                    folded in: decaf_codegen.py: definitions for generating code
+5. decaf_absmc.py: definitions for the abstract machine and for manipulating abstract programs
