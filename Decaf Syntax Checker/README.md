@@ -4,4 +4,4 @@ class a {\
 		a y;\
 		y= null;\
 	}\
-}\
+}
