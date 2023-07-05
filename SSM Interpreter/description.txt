@@ -1,0 +1,5 @@
+Input:
+The program should accept the name of a file as a command-line argument. This file will contain the SSM instructions that need to be scanned and executed by the program.
+
+Output:
+The program should display the output resulting from the execution of the SSM instructions in the input file to the standard output.
